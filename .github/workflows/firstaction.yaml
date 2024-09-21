@@ -7,9 +7,14 @@ jobs:
         steps:
         - name: Checkout Repo
           uses: actions/checkout@v4          
-        - name: welcome Message
-          run: echo "My first Action welcome amol"
-        - name: List Files
-          run: ls
-        - name: Read File
-          run: cat README.md 
+        - name: List File & Read 
+          run: |
+            echo "My first Action welcome amol"
+            ls -lrt
+            cat README.md
+        - name: Pint ASCII Artwork
+          run: cowsay -f dragon "Here be dragons!" > dragon.txt
+        # - name: List Files
+        #   run: ls
+        # - name: Read File
+        #   run: cat README.md 
