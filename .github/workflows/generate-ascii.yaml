@@ -6,10 +6,12 @@ jobs:
     generate_artwork:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout Repo
+              uses: actions/checkout@v4
             - name: List files
               run: ls -lart
             - name: Excute Shell script
               run: |
-                chmod +x
-                ./scii-script.sh
+                chmod +x ascii-script.sh
+                ./ascii-script.sh
             
