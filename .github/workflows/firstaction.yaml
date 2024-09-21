@@ -6,7 +6,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: welcome Message
-          run: eacho "My first Action welcome amol"
+          run: echo "My first Action welcome amol"
         - name: List Files
           run: ls
         - name: Read File
